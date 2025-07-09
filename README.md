@@ -11,3 +11,47 @@ Layout: I designed it simple to make it easy to navigate across the devices usin
 Color Palette: I used these colors through out my mockup #FFFFFF, #EC7148, #0F125D, #FFCB05 to stay in the pokedex context.
 
 User Interaction: I used buttons, hover states and forms to help guide the users
+
+# Capstone Project – Part 3: Pokedex Web App Prototype
+
+## Overview
+This project is a responsive web-based Pokedex prototype created as part of Capstone Project – Part 3. It allows users to view Pokémon, read their descriptions in a modal popup, and add/remove them from a personal "Caught" (Collections) list.
+
+---
+
+## Steps Taken to Create the Prototype
+
+1. **Setup Git Workflow**
+   - Created a new branch `part-3` from `part-2`
+   - Initialized HTML, CSS, and JavaScript files
+
+2. **Built HTML Structure**
+   - Created a semantic structure using `<header>`, `<section>`, and `<div>`
+   - Included a header with a logo, search bar, and a "Caught" link
+   - Created a main Pokémon gallery and a hidden Collections section
+
+3. **Designed Layout with CSS**
+   - Used Flexbox and CSS Grid for responsive layouts
+   - Styled cards, buttons, and modal popup to match the Figma design
+   - Ensured responsiveness for mobile, tablet, and desktop screens
+
+4. **Added Interactivity with JavaScript**
+   - Clicking “View Details” opens a modal with the Pokémon's image and description
+   - Clicking “Select” adds the Pokémon to the Collections page and updates the "Caught" count
+   - Clicking “Remove” deletes Pokémon from the Collections list
+   - “Add More” navigates back to the gallery
+   - “Load More” dynamically adds 20 more Pokémon to the gallery
+
+## Resources Used
+
+- Pokémon images: [https://pokemondb.net](https://pokemondb.net)
+- Fonts and layout inspiration: Figma mockup
+- HTML/CSS/JS validation: W3C Validator tools
+
+---
+
+## Challenges Faced
+
+- Ensuring that the modal worked dynamically across all Pokémon and that only valid data appeared
+- Managing DOM updates when adding/removing Pokémon from the Collection list without refreshing the page
+- Maintaining responsiveness and accessibility across different breakpoints

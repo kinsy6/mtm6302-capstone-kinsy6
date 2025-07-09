@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Hello pokedex</h1>
-    <p>hello new branch</p>
+
+  <!-- Header -->
+  <header class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pokémon_logo.svg" alt="Pokedex Logo" class="logo">
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+      <button class="search-btn">🔍</button>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <section id="gallery-section">
+    <h2 class="caught-title">
+      <span class="caught-link" onclick="showCollections()">Caught <span id="caught-count">0</span></span>
+    </h2>
+
+    <div class="pokemon-grid" id="pokemon-grid">
+    </div>
+
+    <div class="load-more-container">
+      <button class="load-more" onclick="loadMore()">Load More</button>
+    </div>
+  </section>
+
+  <!-- Collections Section -->
+  <section id="collections" class="hidden">
+    <h2 class="collections-title">COLLECTIONS</h2>
+    <div class="pokemon-grid" id="collection-grid">
+    </div>
+    <div class="load-more-container">
+      <button class="load-more" onclick="showGallery()">Add More</button>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="pokemon-modal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="back-arrow" onclick="closeModal()">←</span>
+        <span class="close-btn" onclick="closeModal()">×</span>
+      </div>
+      <img id="modal-img" src="" alt="Pokemon" />
+      <h3>Description</h3>
+      <p id="modal-description"></p>
+      <button class="select-btn" onclick="selectPokemon()">Select</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
