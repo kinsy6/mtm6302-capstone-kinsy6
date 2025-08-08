@@ -55,3 +55,37 @@ This project is a responsive web-based Pokedex prototype created as part of Caps
 - Ensuring that the modal worked dynamically across all Pokémon and that only valid data appeared
 - Managing DOM updates when adding/removing Pokémon from the Collection list without refreshing the page
 - Maintaining responsiveness and accessibility across different breakpoints
+
+
+# Capstone Project – Part 4: Final Functional Pokedex Web App
+
+1. Overview
+
+This is the final functional version of the Pokedex web application built using HTML, CSS, and JavaScript. It allows users to view Pokémon, check their details, add them to a collection, and remove them all without page reloads.
+
+2. Steps Taken
+
+- Branched from `part-3` to create `part-4`
+- Refactored HTML structure for simplicity and accessibility
+- Converted all inline events to JavaScript `addEventListener` functions
+- Managed state entirely in JavaScript with `const` and `let`
+- Styled layout using CSS Grid and Flexbox
+- Made layout fully responsive for mobile, tablet, and desktop
+
+
+3. Challenges Faced
+
+- Preventing page refresh while managing multiple UI states
+- Updating the DOM dynamically with clean reusable functions
+- Maintaining state (caught Pokémon) without a database or backend
+- Ensuring accessibility and mobile responsiveness
+
+---
+
+4. Final Result
+
+All functionality is done with one HTML, one CSS, and one JS file.  
+No page refreshes occur.  
+The code follows modern best practices (no `var`, no inline events, uses `fetch()`).
+
+
